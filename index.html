@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Web Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+    body {
+      margin: 0;
+      overflow-x: hidden;
+      background-color: #f5f5f5;
+      color: #212121;
+      font-family: Arial, sans-serif;
+    }
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin: 20px 0;
+    }
+    section {
+      padding: 60px 20px;
+    }
+    .btn {
+      background-color: #333;
+      color: #fff;
+      border: none;
+    }
+    .btn:hover {
+      background-color: #555;
+      transform: scale(1.05);
+      opacity: 0.9;
+      transition: all 0.3s ease-in-out;
+    }
+    img:hover {
+      transform: scale(1.03);
+      transition: transform 0.3s ease-in-out;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+    #about .bi {
+      color: #333;
+      transition: transform 0.3s ease-in-out;
+    }
+    #about .bi:hover {
+      transform: scale(1.2);
+      color: #000;
+    }
+    footer a {
+      color: #bbb;
+      transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+    footer a:hover {
+      transform: scale(1.2);
+      color: #fff !important;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+    footer {
+      background-color: #212121;
+      color: #eee;
+    }
+    .card {
+      background-color: #fff;
+      border: 1px solid #ccc;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+      color: #eee;
+    }
+    .navbar-dark .navbar-nav .nav-link:hover {
+      color: #fff;
+    }
+    .navbar-dark .navbar-brand {
+      color: #fff;
+    }
+    </style>
+    
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Xirkel</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#quizzes">Quizzes</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Home Section -->
+<section id="home" class="container text-center py-5">
+  <h1 class="mb-3">Welcome to My Web Portfolio</h1>
+  <p class="lead">
+    I am <strong>Loubrix Kelly Lanzona</strong>, a student of <strong>Cavite State University (CVSU)</strong> 
+    currently pursuing a degree in <strong>BS Information Technology (BSIT)</strong>. 
+    This portfolio showcases some of my best work and academic projects. 
+    Feel free to explore and get to know more about what I do!
+  </p>
+
+    <!-- Wear Mania Project Highlight: Side-by-Side Layout -->
+    <div class="row align-items-center mt-5 text-start">
+      <div class="col-md-6 text-center mb-4 mb-md-0">
+        <img src="images/Wearmania.png" alt="Wear Mania Preview" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-6">
+        <h2>Featured Project: Wear Mania</h2>
+        <p class="lead">
+          <strong>Wear Mania</strong> is a fashion-themed website I designed and developed using HTML, CSS, and JavaScript. 
+          It features a modern and responsive layout with an engaging homepage, an about section, an interactive image lightbox, 
+          and a scroll-to-top button. This project showcases my front-end development skills and user-focused design approach.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="bg-light py-5">
+  <div class="container">
+    <h1 class="text-center mb-5">About Me</h1>
+    
+    <!-- Two-column layout -->
+    <div class="row align-items-start">
+      <!-- Left Column: Profile Image & Resume -->
+      <div class="col-md-4 text-center mb-4 mb-md-0 d-flex flex-column align-items-center">
+        <img src="images/Pfp.jpg" alt="My Photo" class="img-fluid rounded-circle mb-3" style="max-width: 300px;">
+        <a href="images/Loubrix_Kelly_Lanzona_Resume.pdf" class="btn btn-primary" download>Download My Resume</a>
+      </div>
+
+      <!-- Right Column: Description Text -->
+      <div class="col-md-8">
+        <p class="lead">
+          Hello! I'm <strong>Loubrix Kelly Lanzona</strong>, a dedicated BS Information Technology student at 
+          <strong>Cavite State University (CVSU)</strong>. I have a strong passion for technology, especially in the areas 
+          of <strong>Data Analytics</strong> and <strong>Network Administration</strong>. I enjoy solving problems using 
+          data-driven solutions and exploring the inner workings of networks and systems to ensure secure and efficient communication.
+        </p>
+        <p class="lead">
+          Throughout my academic journey, I have consistently pursued opportunities to expand my skills in data visualization, 
+          statistical analysis, and network infrastructure. I thrive in dynamic environments where I can apply both analytical 
+          and technical skills to create real-world impact. Whether it’s diving into large datasets or configuring secure networks, 
+          I am always eager to learn and take on new challenges.
+        </p>
+      </div>
+    </div>
+
+    <!-- Interests and Hobbies Section -->
+    <h3 class="text-center mt-5">Interests & Hobbies</h3>
+    <div class="row justify-content-center mt-4">
+      <div class="col-4 col-sm-3 col-md-2 text-center mb-4">
+        <i class="bi bi-bar-chart-line-fill display-4 text-primary"></i>
+        <p class="mt-2">Data Analytics</p>
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 text-center mb-4">
+        <i class="bi bi-diagram-3-fill display-4 text-success"></i>
+        <p class="mt-2">Networking</p>
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 text-center mb-4">
+        <i class="bi bi-journal-code display-4 text-info"></i>
+        <p class="mt-2">Coding</p>
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 text-center mb-4">
+        <i class="bi bi-music-note-beamed display-4 text-danger"></i>
+        <p class="mt-2">Music</p>
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 text-center mb-4">
+        <i class="bi bi-controller display-4 text-warning"></i>
+        <p class="mt-2">Gaming</p>
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 text-center mb-4">
+        <i class="bi bi-book-half display-4 text-secondary"></i>
+        <p class="mt-2">Tech Reading</p>
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 text-center mb-4">
+        <i class="bi bi-trophy-fill display-4 text-orange"></i>
+        <p class="mt-2">Basketball</p>
+      </div>  
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Projects Section -->
+<section id="projects" class="container text-center">
+  <h1>Project</h1>
+  <div class="row justify-content-center mt-4">
+    <div class="col-md-6">
+      <div class="card p-4 shadow-sm">
+        <h4 class="card-title">WearMania</h4>
+        <p class="card-text text-muted">
+          This is an accessible clothing showcase website where users can navigate through a handpicked list of clothes. It is an easy-to-navigate and aesthetically pleasing website that provides a variety of styles to allow users to discover and explore clothing pieces effortlessly.
+        </p>
+        <img src="C:\Users\Loubrix kelly\OneDrive\Documents\HCI\MyWebPortfolio\images\Wearmania.png" alt="WearMania" class="img-fluid rounded mt-3">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Quizzes Section -->
+<section id="quizzes" class="bg-light text-center py-5">
+  <div class="container">
+    <h1 class="mb-4">Quizzes and Exams</h1>
+
+    <!-- Quiz List -->
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+
+      <!-- Quiz 1 -->
+      <div class="col">
+        <div class="card p-3 h-100 shadow-sm">
+          <h5>Quiz 1</h5>
+          <p>Score: 16/20</p>
+          <a href="images/post1.jpg" target="_blank" class="btn btn-primary">View Quiz</a>
+        </div>
+      </div>
+
+      <!-- Quiz 2 -->
+      <div class="col">
+        <div class="card p-3 h-100 shadow-sm">
+          <h5>Quiz 2</h5>
+          <p>Score: 18/20</p>
+          <a href="images/post2.jpg" target="_blank" class="btn btn-primary">View Quiz</a>
+        </div>
+      </div>
+
+      <!-- Quiz 3 -->
+      <div class="col">
+        <div class="card p-3 h-100 shadow-sm">
+          <h5>Quiz 3</h5>
+          <p>Score: 16/20</p>
+          <a href="images/post3.jpg" target="_blank" class="btn btn-primary">View Quiz</a>
+        </div>
+      </div>
+
+      <!-- Quiz 4 -->
+      <div class="col">
+        <div class="card p-3 h-100 shadow-sm">
+          <h5>Quiz 4</h5>
+          <p>Score: 17/20</p>
+          <a href="images/post4.jpg" target="_blank" class="btn btn-primary">View Quiz</a>
+        </div>
+      </div>
+
+      <!-- Quiz 5 -->
+      <div class="col">
+        <div class="card p-3 h-100 shadow-sm">
+          <h5>Quiz 5</h5>
+          <p>Score: 16/20</p>
+          <a href="images/post5.jpg" target="_blank" class="btn btn-primary">View Quiz</a>
+        </div>
+      </div>
+
+      <!-- Long Quiz -->
+      <div class="col">
+        <div class="card p-3 h-100 shadow-sm">
+          <h5>Long Quiz</h5>
+          <p>Score: 32/40</p>
+          <a href="images/longquiz1.jpg" target="_blank" class="btn btn-primary">View Quiz</a>
+        </div>
+      </div>
+
+      <!-- Midterm Exam -->
+      <div class="col">
+        <div class="card p-3 h-100 shadow-sm">
+          <h5>Midterm Exam</h5>
+          <p>Score: 44/70</p>
+          <a href="images/midterm.jpg" target="_blank" class="btn btn-primary">View Exam</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4">
+  <div class="container">
+    <p class="mb-2">Contact Me:</p>
+    <div class="d-flex justify-content-center gap-4">
+      <a href="mailto:sc.loubrixkelly.lanzona@cvsu.edu.ph" class="text-info fs-4" title="Email">
+        <i class="bi bi-envelope-fill"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/loubrix-kelly-lanzona-145851354/" target="_blank" class="text-info fs-4" title="LinkedIn">
+        <i class="bi bi-linkedin"></i>
+      </a>
+      <a href="https://github.com/Xirkel" target="_blank" class="text-info fs-4" title="GitHub">
+        <i class="bi bi-github"></i>
+      </a>
+    </div>
+  </div>
+  <br>
+  <p>&copy; 2025 Loubrix Kelly Lanzona. All rights reserved.</p>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
